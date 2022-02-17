@@ -1,10 +1,9 @@
 import { createStore } from 'redux';
 import './App.css';
 
-function App()
-{
-	const INCREAMENT = "INCREAMENT";
-	const DECREAMENT = "DECREAMENT";
+function App() {
+	const INCREAMENT = 'INCREAMENT';
+	const DECREAMENT = 'DECREAMENT';
 
 	const defaultState = {
 		state: 10,
@@ -38,6 +37,10 @@ function App()
 			type: DECREAMENT,
 		};
 	};
+
+	store.subscribe(() => {
+		console.log('subscription called');
+	});
 
 	store.dispatch(
 		defaultState.state > 5 ? setDecreamentAction() : setIncreamentAction()
