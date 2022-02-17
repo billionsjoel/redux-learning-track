@@ -37,6 +37,10 @@ function App() {
 		};
 	};
 
+	store.dispatch(
+		defaultState > 5 ? setDecreamentAction() : setIncreamentAction()
+	);
+
 	return <div className="App">{store.getState().state}</div>;
 }
 
