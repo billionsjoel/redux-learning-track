@@ -30,7 +30,7 @@ function App()
 
 	const setIncreamentAction = () => {
 		return {
-			type: 'INCREAMENT',
+			type: INCREAMENT,
 		};
 	};
 	const setDecreamentAction = () => {
