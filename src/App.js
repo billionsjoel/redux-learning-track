@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
 	const defaultState = {
-		state: 5,
+		state: 1,
 	};
 
 	const reducer = (state = defaultState, action) => {
@@ -12,12 +12,10 @@ function App() {
 				return {
 					state: 10,
 				};
-				break;
 			case 'DECREAMENT':
 				return {
 					state: 1,
 				};
-				break;
 
 			default:
 				return defaultState;
