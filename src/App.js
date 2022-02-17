@@ -7,9 +7,13 @@ function App() {
 	};
 	const store = createStore(reducer);
 
-	const action = {
-		type: 'LOGIN',
+	const setStateAction = () => {
+		return {
+			type: 'state',
+		};
 	};
+
+	store.dispatch(setStateAction());
 
 	return <div className="App">{store.getState()}</div>;
 }
