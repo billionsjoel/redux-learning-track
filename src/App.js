@@ -13,7 +13,11 @@ function App() {
 					state: 10,
 				};
 				break;
-
+			case 'DECREAMENT':
+				return {
+					state: 1,
+				};
+				break;
 
 
 		}
