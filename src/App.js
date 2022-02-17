@@ -35,7 +35,7 @@ function App()
 	};
 	const setDecreamentAction = () => {
 		return {
-			type: 'DECREAMENT',
+			type: DECREAMENT,
 		};
 	};
 
