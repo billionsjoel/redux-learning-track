@@ -4,7 +4,7 @@ import './App.css';
 function App()
 {
 	const INCREAMENT = "INCREAMENT";
-	//const DECREAMENT = "DECREAMENT";
+	const DECREAMENT = "DECREAMENT";
 
 	const defaultState = {
 		state: 10,
