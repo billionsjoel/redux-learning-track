@@ -16,7 +16,7 @@ function App()
 				return {
 					state: 10,
 				};
-			case 'DECREAMENT':
+			case DECREAMENT:
 				return {
 					state: 1,
 				};
