@@ -7,7 +7,7 @@ function App() {
 	};
 	const store = createStore(reducer);
 
-	return <div className="App">{console.log(store.state)}</div>;
+	return <div className="App">{console.log(store)}</div>;
 }
 
 export default App;
