@@ -7,6 +7,10 @@ function App() {
 	};
 	const store = createStore(reducer);
 
+	const action = {
+		type: 'LOGIN',
+	};
+
 	return <div className="App">{store.getState()}</div>;
 }
 
