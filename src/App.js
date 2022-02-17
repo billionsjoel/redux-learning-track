@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
 	const defaultState = {
-		state: 1,
+		state: 10,
 	};
 
 	const reducer = (state = defaultState, action) => {
@@ -36,7 +36,7 @@ function App() {
 	};
 
 	store.dispatch(
-		defaultState > 5 ? setDecreamentAction() : setIncreamentAction()
+		defaultState.state > 5 ? setDecreamentAction() : setIncreamentAction()
 	);
 
 	return <div className="App">{store.getState().state}</div>;
