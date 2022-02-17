@@ -7,7 +7,12 @@ function App() {
 	};
 
 	const reducer = (state = defaultState, action) => {
-		
+		switch (action.type) {
+			case 'INCREAMENT':
+				return {
+					state: 10,
+				};
+				break;
 
 
 
