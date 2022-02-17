@@ -18,13 +18,18 @@ function App() {
 
 	const store = createStore(reducer);
 
-	const setStateAction = () => {
+	const setIncreamentAction = () => {
 		return {
-			type: 'CHANGE',
+			type: 'INCREAMENT',
+		};
+	};
+	const setDecreamentAction = () => {
+		return {
+			type: 'DECREAMENT',
 		};
 	};
 
-	store.dispatch(setStateAction());
+	//store.dispatch(setStateAction());
 
 	return <div className="App">{store.getState().state}</div>;
 }
