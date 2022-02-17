@@ -26,7 +26,7 @@ function App() {
 
 	store.dispatch(setStateAction());
 
-	return <div className="App">{store.getState()}</div>;
+	return <div className="App">{store.getState().state}</div>;
 }
 
 export default App;
