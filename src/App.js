@@ -19,7 +19,8 @@ function App() {
 				};
 				break;
 
-
+			default:
+				return defaultState;
 		}
 	};
 
