@@ -26,7 +26,11 @@ function App() {
 
 	const store = createStore(reducer);
 
-
+	const setIncreamentAction = () => {
+		return {
+			type: 'INCREAMENT',
+		};
+	};
 
 
 	return <div className="App">{store.getState().state}</div>;
