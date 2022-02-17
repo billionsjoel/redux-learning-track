@@ -31,7 +31,11 @@ function App() {
 			type: 'INCREAMENT',
 		};
 	};
-
+	const setDecreamentAction = () => {
+		return {
+			type: 'DECREAMENT',
+		};
+	};
 
 	return <div className="App">{store.getState().state}</div>;
 }
