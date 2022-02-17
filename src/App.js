@@ -2,14 +2,25 @@ import { createStore } from 'redux';
 import './App.css';
 
 function App() {
-	const reducer = (state = 5) => {
-		return state;
+	const defaultState = {
+		state: 5,
 	};
+
+	const reducer = (state = defaultState, action) => {
+		if (action.type === 'CHANGE') {
+			return {
+				state: 10,
+			};
+		} else {
+			return state;
+		}
+	};
+
 	const store = createStore(reducer);
 
 	const setStateAction = () => {
 		return {
-			type: 'state',
+			type: 'CHANGE',
 		};
 	};
 
